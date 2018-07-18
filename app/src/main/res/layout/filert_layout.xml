@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/titleheader2" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liner">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp"
+            android:text="Category"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke">
+            <Spinner
+                android:id="@+id/categ"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Subcategory"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke">
+            <Spinner
+                android:id="@+id/subcateg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Based on Area"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Uploaded From My Res. Complex"
+                android:textColor="#fff"
+                android:buttonTint="@color/pink"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Uploaded From Nearby Area"
+                android:textColor="#fff"
+                android:buttonTint="@color/pink"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/pink"
+                android:text="Uploaded From Entire Zone"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Price"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/min"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:hint="Min Price"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColor="@color/pink"
+            android:textColorHint="@color/pink"
+            android:paddingLeft="10dp"
+            android:background="@drawable/stroke"/>
+
+    <EditText
+        android:id="@+id/max"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:hint="Max Price"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:textColor="@color/pink"
+        android:textColorHint="@color/pink"
+        android:paddingLeft="10dp"
+        android:background="@drawable/stroke"/>
+</LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Age of the product"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke">
+            <Spinner
+                android:id="@+id/ageofProd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Date Posted"/>
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#fff"
+            android:buttonTint="@color/pink"
+            android:text="0-3 days old" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/checkBox1"
+            android:textColor="#fff"
+            android:buttonTint="@color/pink"
+            android:text="4-10 days old" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/checkBox2"
+            android:textColor="#fff"
+            android:buttonTint="@color/pink"
+            android:text=" 11-30 days old" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/checkBox2"
+            android:textColor="#fff"
+            android:buttonTint="@color/pink"
+            android:text="30 - 60 days old" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/checkBox1"
+            android:textColor="#fff"
+            android:buttonTint="@color/pink"
+            android:text=" 60-90 days old" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/checkBox2"
+            android:textColor="#fff"
+            android:buttonTint="@color/pink"
+            android:text="More than 90 days" />
+
+        <Button
+            android:id="@+id/sendEnq"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Search"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="@drawable/stroke_pink"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

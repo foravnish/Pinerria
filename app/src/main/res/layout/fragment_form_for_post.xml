@@ -1,0 +1,446 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+            <Spinner
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+            <Spinner
+                android:id="@+id/subCategory"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/headline"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:hint="Headline"
+            android:inputType="textPersonName"
+            android:background="@drawable/stroke"/>
+
+
+        <LinearLayout
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+            <Spinner
+                android:id="@+id/typeSpiner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/manufecture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+            <Spinner
+                android:id="@+id/manufectureSpiner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/badroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+            <Spinner
+                android:id="@+id/badroomSpiner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/brand"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:drawablePadding="10dp"
+            android:hint="Brand"
+            android:inputType="textPersonName"
+            android:background="@drawable/stroke"/>
+
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:hint="State"
+            android:inputType="textPersonName"
+            android:background="@drawable/stroke"/>
+        <EditText
+            android:id="@+id/kmsDone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:drawablePadding="10dp"
+            android:hint="Kms Done till date"
+            android:inputType="textPersonName"
+            android:background="@drawable/stroke"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:hint="City"
+            android:inputType="textPersonName"
+            android:background="@drawable/stroke"/>
+        <LinearLayout
+            android:id="@+id/fueltype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+            <Spinner
+                android:id="@+id/fuelTypeSpiner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2">
+            <EditText
+                android:id="@+id/min"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:hint="Min Price"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:background="@drawable/stroke"/>
+
+            <EditText
+                android:id="@+id/max"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:hint="Max Price"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:background="@drawable/stroke"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/fab_margin"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Month &amp; year of Completion / First Purchase"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stroke"
+                android:layout_weight="1">
+                <Spinner
+                    android:id="@+id/monthSpiner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stroke"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+                <Spinner
+                    android:id="@+id/yearSpiner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ageOfProd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:drawablePadding="10dp"
+            android:hint="Age of Product in Month"
+            android:background="@drawable/stroke"/>
+
+        <EditText
+            android:id="@+id/descreption"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="textMultiLine"
+            android:drawablePadding="10dp"
+            android:hint="Description"
+            android:gravity="top"
+            android:background="@drawable/stroke"/>
+
+        <TextView
+            android:id="@+id/textRemaining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/fab_margin"
+            android:textColor="#fff"
+            android:text="remaining"/>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:hint="mobile"
+            android:inputType="phone"
+            android:background="@drawable/stroke"/>
+
+        <EditText
+            android:id="@+id/emailID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/stroke"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/fab_margin"
+            android:textColor="#fff"
+            android:text="Advice to potential buyers for contacting."/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Either"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/fab_margin"
+                android:textColor="#fff"
+                android:text="Valid For"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stroke"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+                <Spinner
+                    android:id="@+id/valiFor"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/fab_margin"
+            android:textColor="#fff"
+            android:text="Upload Images (At least One)"/>
+
+
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

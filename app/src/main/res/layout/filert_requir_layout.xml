@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/titleheader2" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:text="Category"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stroke">
+                <Spinner
+                    android:id="@+id/categ"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </Spinner>
+            </LinearLayout>
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Search Requirement"/>
+            <EditText
+                android:id="@+id/min"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Search"
+                android:textColor="@color/pink"
+                android:textColorHint="@color/pink"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:background="@drawable/stroke"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Budget"/>
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="#fff"
+                android:buttonTint="@color/pink"
+                android:text="Less than Rs 2000" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/checkBox1"
+                android:textColor="#fff"
+                android:buttonTint="@color/pink"
+                android:text="Rs 2001 to Rs 5000" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/checkBox2"
+                android:textColor="#fff"
+                android:buttonTint="@color/pink"
+                android:text="Rs 5001 to Rs 10000" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/checkBox2"
+                android:textColor="#fff"
+                android:buttonTint="@color/pink"
+                android:text="Rs 10001 to Rs 20000" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/checkBox1"
+                android:textColor="#fff"
+                android:buttonTint="@color/pink"
+                android:text="More Than Rs 20000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Rent / purchase"/>
+
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textColor="#fff"
+                android:buttonTint="@color/pink"
+                android:text="Rent" />
+
+            <CheckBox
+                android:id="@+id/checkBox22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/checkBox1"
+                android:textColor="#fff"
+                android:buttonTint="@color/pink"
+                android:text="Purchase" />
+
+
+            <Button
+                android:id="@+id/sendEnq"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Search"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:background="@drawable/stroke_pink"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

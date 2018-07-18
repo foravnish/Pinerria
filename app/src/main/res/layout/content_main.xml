@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="application.pinerria.Activities.MainActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+
+
+    </FrameLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/liner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/sell"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/gray2"
+                android:textSize="13dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/sell2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Sell"/>
+            <TextView
+                android:id="@+id/postAd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:textSize="13dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/ads2"
+                android:textColor="@color/gray2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Home Business"/>
+            <TextView
+                android:id="@+id/buy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:drawableTop="@drawable/buy2"
+                android:textSize="13dp"
+                android:textColor="@color/gray2"
+                android:drawablePadding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Buy"/>
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/accout2"
+                android:gravity="center"
+                android:textSize="13dp"
+                android:drawablePadding="5dp"
+                android:textColor="@color/gray2"
+                android:text="Account"/>
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/gray2"
+                android:textSize="13dp"
+                android:drawableTop="@drawable/help2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:text="Help"/>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

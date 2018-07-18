@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/postAd"
+            android:icon="@drawable/homem"
+            android:title="Home" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/users"
+            android:title="Profile" />
+        <item
+            android:id="@+id/myAccount"
+            android:icon="@drawable/acount"
+            android:title="My Account" />
+
+        <item
+            android:id="@+id/viewAd"
+            android:icon="@drawable/viewad"
+            android:visible="false"
+            android:title="View Ad" />
+        <item
+            android:id="@+id/postReq"
+            android:icon="@drawable/viewad"
+            android:visible="false"
+            android:title="Post Your Requirement" />
+        <item
+            android:id="@+id/showReq"
+            android:icon="@drawable/viewad"
+            android:visible="false"
+            android:title="Show Requirement" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about"
+            android:title="About us" />
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/faq"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/tnc"
+            android:icon="@drawable/tnc"
+            android:title="Terms &amp; Conditions" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help"
+            android:title="Help Desk" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/contact"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/chngPass"
+            android:icon="@drawable/paswrord"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

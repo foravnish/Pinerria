@@ -1,0 +1,572 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="application.pinerria.Fragments.Deshboard">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="top"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MY ADS FOR PRODUCTS"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/car1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Ads"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/totalP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/car2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/approved"
+                                android:drawablePadding="1dp"
+                                android:text="Approved"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/approvedP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/car3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/pending"
+                                android:drawablePadding="1dp"
+                                android:text="Disapproved"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/desApproceP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/car4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/pendingico"
+                                android:drawablePadding="1dp"
+                                android:text="Approval Pending"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/pendingP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/car5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/sold"
+                                android:drawablePadding="1dp"
+                                android:text="Sold"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/soldP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="top"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MY ADS FOR HOME BUSINESS"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/home1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Ads"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/totalB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/home2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/approved"
+                                android:drawablePadding="1dp"
+                                android:text="Approved"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/approvedB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/home3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/pending"
+                                android:drawablePadding="1dp"
+                                android:text="Disapproved"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/desApproceB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/home4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/pendingico"
+                                android:drawablePadding="1dp"
+                                android:text="Approval Pending"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/pendingB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/home5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/sold"
+                                android:drawablePadding="1dp"
+                                android:text="Sold"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/soldB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="top"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MY REQUIREMENTS"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/req1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Ads"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/totalR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/req2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/approved"
+                                android:drawablePadding="1dp"
+                                android:text="Approved"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/approvedR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/req3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/pending"
+                                android:drawablePadding="1dp"
+                                android:text="Disapproved"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/desApproceR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/req4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/pendingico"
+                                android:drawablePadding="1dp"
+                                android:text="Approval Pending"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/pendingR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/req5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/sold"
+                                android:drawablePadding="1dp"
+                                android:text="Ads related to my requirement"
+                                android:textColor="@color/pink"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/soldR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="@color/gray2"
+                                android:textSize="16dp" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
